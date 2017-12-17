@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dicom (0.9.6)
+    mini_portile2 (2.0.0)
+    narray (0.6.1.2)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
+    rmagick (2.15.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dicom (= 0.9.6)
+  narray (= 0.6.1.2)
+  nokogiri (= 1.6.7.2)
+  rmagick (= 2.15.4)
+
+BUNDLED WITH
+   1.11.2

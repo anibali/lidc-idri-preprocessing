@@ -14,6 +14,11 @@ local stage1_dir = '/data/lidc/LIDC-IDRI_stage1'
 -- Output directory
 local stage2_dir = '/data/lidc/LIDC-IDRI_stage2'
 
+-- Check that stage1_dir is an existing directory.
+if not pl.path.isdir(stage1_dir) then
+  error(string.format('Input directory not found: "%s"', stage1_dir))
+end
+
 -- The number of augmented variations we want to generate for each example.
 -- It is possible to increase this number and run the script again.
 local n_augmentations = 32

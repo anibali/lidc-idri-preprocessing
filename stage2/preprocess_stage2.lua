@@ -60,9 +60,10 @@ for i,example_file in ipairs(examples) do
     -- Find the current number of augmentations we have stored
     local planes_files = pl.dir.getallfiles(out_dir, 'planes_*.t7')
     table.sort(planes_files)
-    local cur_n_augs = tonumber(({string.find(pl.path.basename(planes_files[#planes_files]), 'planes_(%d+).t7')})[3])
-    cur_n_augs = cur_n_augs or 0
-
+    local cur_n_augs = 0
+    if #planes_files > 0 then
+      cur_n_augs = tonumber(({string.find(pl.path.basename(planes_files[#planes_files]), 'planes_(%d+).t7')})[3])
+    end
     -- Increase the number of augmentations if necessary
     if n_augmentations > cur_n_augs then
       -- Load voxels from disk

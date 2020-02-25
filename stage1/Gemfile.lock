@@ -2,10 +2,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     dicom (0.9.6)
-    mini_portile2 (2.3.0)
+    mini_portile2 (2.4.0)
     narray (0.6.1.2)
-    nokogiri (1.8.5)
-      mini_portile2 (~> 2.3.0)
+    nokogiri (1.10.8)
+      mini_portile2 (~> 2.4.0)
     rmagick (2.15.4)
 
 PLATFORMS
@@ -14,7 +14,7 @@ PLATFORMS
 DEPENDENCIES
   dicom (~> 0.9.6)
   narray (~> 0.6.1.2)
-  nokogiri (~> 1.8.5)
+  nokogiri (~> 1.10.8)
   rmagick (~> 2.15.4)
 
 BUNDLED WITH
